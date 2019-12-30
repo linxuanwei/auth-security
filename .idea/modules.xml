@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/auth-security/auth-security.iml" filepath="$PROJECT_DIR$/auth-security/auth-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-security/auth-security-app/auth-security-app.iml" filepath="$PROJECT_DIR$/auth-security/auth-security-app/auth-security-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-security/auth-security-browser/auth-security-browser.iml" filepath="$PROJECT_DIR$/auth-security/auth-security-browser/auth-security-browser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-security/auth-security-core/auth-security-core.iml" filepath="$PROJECT_DIR$/auth-security/auth-security-core/auth-security-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth-security/auth-security-demo/auth-security-demo.iml" filepath="$PROJECT_DIR$/auth-security/auth-security-demo/auth-security-demo.iml" />
+    </modules>
+  </component>
+</project>
