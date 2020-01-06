@@ -6,7 +6,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   session:
     store-type: none
+  security:
+    user:
+      name: admin
+      password: admin
 
 #debug: true
 server:
   port: 8086
+
+mybatis:
+  mapper-locations: classpath*:mybatis/mapper/*.xml
+  base-packages: org.seven.mapper
