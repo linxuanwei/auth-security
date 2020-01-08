@@ -1,4 +1,4 @@
-package org.seven.controller;
+package org.seven.web.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.seven.domain.User;

@@ -28,3 +28,7 @@ server:
 
 mybatis:
   mapper-locations: classpath*:mybatis/mapper/*.xml
+
+logging:
+  level:
+    org.seven.mapper: debug
