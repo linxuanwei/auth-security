@@ -14,11 +14,4 @@ public interface UserMapper extends Mapper<User> {
 
     User selectByNick(String nick);
 
-//
-//    @Insert("insert into user (phone,nick,gender,age,avatar,score,childrenIds,wechatAccount,last_sign_in_at,created_at,updated_at) " +
-//            "values(#{phone},#{nick},#{gender},#{age},#{avatar},#{score},#{childrenIds},#{wechatAccount},now(),now(),now())")
-//    @Options(useGeneratedKeys = true)
-//    Integer create(User user);
-
-
 }

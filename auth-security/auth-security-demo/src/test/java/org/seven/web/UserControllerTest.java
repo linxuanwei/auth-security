@@ -47,7 +47,7 @@ public class UserControllerTest {
     public void whenGetInfo() throws Exception {
         mockMvc.perform(get("/user/1").contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$.nick").value("Tom"));
+                .andExpect(jsonPath("$.nick").value("lxw"));
     }
 
     @Test

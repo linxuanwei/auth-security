@@ -1,12 +1,15 @@
 package org.seven.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.seven.domain.User;
 import org.seven.service.UserService;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.List;
 
 /**
@@ -14,6 +17,7 @@ import java.util.List;
  * @date 2019/12/30 22:47
  */
 @RestController
+@Slf4j
 public class UserController {
 
     @Resource
@@ -40,7 +44,13 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public Integer create(@RequestBody User user) {
+    public Integer create(@Valid @RequestBody User user, BindingResult errors) {
+        if (errors.hasErrors()) {
+            errors.getAllErrors().forEach(error -> {
+                log.error(error.getDefaultMessage());
+            });
+            return -1;
+        }
         return userService.create(user);
     }
 

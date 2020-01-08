@@ -16,7 +16,8 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "JDBC")
     private Long uid;
-    @NotBlank
+
+    @NotBlank(message = "手机号不能为空")
     private String phone;
     private String nick;
     private String gender;
